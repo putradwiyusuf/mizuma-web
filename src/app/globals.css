@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* RESET biar konsisten */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+/* THEME */
+body {
+  background: #0B0B0B;
+  color: #ededed;
+  font-family: sans-serif;
+
+  background-image: radial-gradient(circle at 20% 20%, rgba(255,255,255,0.05), transparent 40%),
+                    radial-gradient(circle at 80% 0%, rgba(234,179,8,0.08), transparent 40%);
+                    
+}
+::selection {
+  background: #EAB308;
+  color: black;
+}
+
+/* 🔥 CUSTOM SWIPER DOTS */
+.hero-swiper .swiper-pagination-bullet {
+  background: #666;
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+  transition: all 0.3s ease;
+}
+
+.hero-swiper .swiper-pagination-bullet-active {
+  background: #eab308; /* warna primary */
+  width: 26px;
+  border-radius: 999px;
+}
